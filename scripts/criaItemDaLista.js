@@ -1,6 +1,6 @@
 import geraDataCompleta from "./geraDataCompleta.js";
 import removeItemDaLista from "./removeItemDaLista.js";
-import editaItemDaLista from "./editaItemdaLista.js";
+import editaItemDaLista from "./editaItemDaLista.js";
 
 const inputItem = document.getElementById("input-item")
 const mensagemItemVazio = "Por favor, insira um item válido!"
