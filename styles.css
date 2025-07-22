@@ -166,8 +166,10 @@ ul {
     gap: 8px;
 }
 
-.container-icone-botao img {
+.container-icone-botao button {
     cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
 .mensagem-lista-vazia {
