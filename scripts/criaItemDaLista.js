@@ -1,12 +1,15 @@
 import geraDataCompleta from "./geraDataCompleta.js";
+import removeItemDaLista from "./removeItemDaLista.js";
+import editaItemDaLista from "./editaItemdaLista.js";
 
 const inputItem = document.getElementById("input-item")
+const mensagemItemVazio = "Por favor, insira um item válido!"
 let contador = 0;
 
 export function criaItemDaLista() {
 
     if (inputItem.value === "") {
-        alert("Por favor, insira um item!");
+        alert(mensagemItemVazio);
         return
     }
 
@@ -22,11 +25,13 @@ export function criaItemDaLista() {
     nomeItem.innerText = inputItem.value;
 
     const botaoRemover = document.createElement("button")
+    botaoRemover.id = "remover-item"
     const iconeBotaoRemover = document.createElement("img")
     iconeBotaoRemover.src = "../img/delete.svg"
     iconeBotaoRemover.alt = "Remover item da lista"
 
     const botaoEditar = document.createElement("button")
+    botaoEditar.id = "editar-item"
     const iconeBotaoEditar = document.createElement("img")
     iconeBotaoEditar.src = "../img/edit.svg"
     iconeBotaoEditar.alt = "Editar item da lista"
@@ -53,10 +58,20 @@ export function criaItemDaLista() {
 
     itemDaLista.appendChild(containerItemDaLista)
 
-    iconeBotaoRemover.appendChild(botaoRemover)
-    containerIconeBotao.appendChild(iconeBotaoRemover)
-    iconeBotaoEditar.appendChild(botaoEditar)
-    containerIconeBotao.appendChild(iconeBotaoEditar)
+    botaoRemover.appendChild(iconeBotaoRemover)
+    botaoEditar.appendChild(iconeBotaoEditar)
+
+    containerIconeBotao.appendChild(botaoRemover)
+    containerIconeBotao.appendChild(botaoEditar)
+
+    botaoRemover.addEventListener("click", () => {
+        removeItemDaLista(itemDaLista)
+    })
+
+    botaoEditar.addEventListener("click", () => {
+        editaItemDaLista(nomeItem)
+    })
+
 
     containerItemDaLista.appendChild(containerInputItem)
     containerItemDaLista.appendChild(containerIconeBotao)
