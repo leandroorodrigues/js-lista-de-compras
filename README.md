@@ -1,7 +1,5 @@
 
-![Descricao da sua imagem](https://imgur.com/C8TfWXc.png)
-
-# Titulo do projeto
+# Minha Lista de Compras
 
 Aplicação web de lista de compras para o curso de construção de páginas dinâmicas com JavaScript.
 
@@ -19,18 +17,12 @@ As técnicas e tecnologias utilizadas pra isso são:
 - `CSS`: estilização da aplicação;
 - `JavaScript`: construção de elementos dinâmicos através da manipulação do DOM.
 
-## 📁 Acesso ao projeto
+## 📁 Acesso ao projeto na web
 
-Você pode [acessar o código fonte do projeto inicial](https://github.com/alura-cursos/3801-javascript-para-web/tree/projeto-base) ou [baixá-lo](https://github.com/alura-cursos/3801-javascript-para-web/archive/refs/heads/projeto-base.zip).
+Você pode [acessar o projeto na web aqui](https://js-lista-de-compras-two.vercel.app/)!
 
-## 🛠️ Abrir e rodar o projeto
+## 🛠️ Atualizações e melhorias
 
-Após baixar o projeto, você pode abrir com o Visual Studio Code. Para isso, no menu superior, clique em:
-
-- **File** > **Open Folder** (ou alguma opção similar)
-- Procure o local onde o projeto está e o selecione (Caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo)
-- Por fim clique em OK
-
-Ao finalizar esses passos, você pode executar a aplicação com a extensão Live Server 🏆 
+Além do que foi ensinado no curso da **Alura**, eu incrementei as funcionalidades de excluir e editar item, dando comportamento aos botões.
 
 
